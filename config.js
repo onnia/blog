@@ -31,12 +31,9 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
-        },
-        paths: {
-            contentPath: path.join(__dirname, '/content/')
+            port: process.env.PORT || '2368'
         }
-    }
+     }
 };
 
 // Export config
