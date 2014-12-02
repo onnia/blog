@@ -24,12 +24,12 @@ config = {
         url: 'http://fish-stories.herokuapp.com',
         database: {
             client: 'mysql',
-			connection: connection,
+            connection: connection,
             debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
         },
